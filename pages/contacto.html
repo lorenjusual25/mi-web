@@ -4,31 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Contactos</title>
 </head>
 <body>
-    <header class="navegacion">
-        <a href="../index.html">INICIO</a>
-        <a href="redes.html">REDES</a>
-        <a class="marcado">CONTACTO</a>
-        <a href="nosotros.html">NOSOTROS</a>
-        <a href="galeria.html">GALERIA</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mi sitio Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuHamburguesa">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link active disabled" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <h1>COMO NOS CONTACTAS</h1> 
-        <h2>DONDE ENCONTRARNOS</h2> 
-        <img src="../assets/ubicacion.jpg" alt="imgUbicacion">
-        <p>Estamos ubicados en la calle falsa 123, en la ciudad de ejemplo.</p>
-    </main>
-    <footer>
-        <h2>TELEFONOS</h2>
-        <div>
-            <p>ARGENTINA: 123-456-7890</p>
-            <p>CHILE: 098-765-4321</p>
-            <p>BRASIL: 151-161-7181</p>
-            <p>BOLIVIA: 920-212-2232</p>
+        <h1 class="text-center mt-3 text-decoration-underline">CONTACTO:</h1>
+        <p class="mx-3">En esta seccion se mostrara los telefonos de contacto, correos y ubicaciones de la empresa</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <img src="../assets/ubicacion.jpg" class="achicar-img-contacto" alt="imagen de nuestra primera sede">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuestra Sede Principal</h5>
+                            <p class="card-text">Calle Falsa 123, Ciudad Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mb-3">
+                        <img src="../assets/ubicacion2.jpg" class="achicar-img-contacto" alt="imagen de nuestra segunda sede">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuestra Sede Secundaria</h5>
+                            <p class="card-text">Avenida Siempre Viva 742, Ciudad Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2 class="mb-3 text-decoration-underline">Correos:</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">contacto@ejemplo.com</li>
+                        <li class="list-group-item">soporte@ejemplo.com</li>
+                        <li class="list-group-item">ventas@ejemplo.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2 class="mb-3 text-decoration-underline">Horarios de atención:</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Lunes a Viernes: 9:00 AM - 6:00 PM</li>
+                        <li class="list-group-item">Sábado: 10:00 AM - 2:00 PM</li>
+                        <li class="list-group-item">Domingo: Cerrado</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2 class="mb-3 text-decoration-underline">Telefonos:</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">ARGENTINA: 123-456-7890</li>
+                        <li class="list-group-item">CHILE: 098-765-4321</li>
+                        <li class="list-group-item">BRASIL: 151-161-7181</li>
+                        <li class="list-group-item">BOLIVIA: 920-212-2232</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5">
         <p>© 1850- 2025 Marca/Empresa</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

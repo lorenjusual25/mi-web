@@ -1,0 +1,53 @@
+.card-title, .card-text {
+    @media (max-width: 576px) {
+        font-size: 0.9rem;
+    }
+}
+div.carousel-item.active {
+    .achicar-img-galeria {
+        @media (min-width: 576px) {
+            width: 80%;
+            height: 800px;
+        }
+    }
+}
+.align-items-center { /*Para alinear el texto de la img en el centro*/
+    @media (min-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .tamano-texto {
+        @media (min-width: 576px) {
+            font-size: 30px; /*Para agrandar el texto*/
+        }
+    }
+}
+
+.achicar-img-index { /*Se achica un poco la img de inicio para pantallas grandes*/
+    @media (min-width: 576px) {
+        width: 70%;
+        height: 800px;
+    }
+}
+
+.animacion-pantallas-grandes {
+    @media (min-width: 576px) {
+        animation: fadeIn 1.2s ease;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+.achicar-img-contacto {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}

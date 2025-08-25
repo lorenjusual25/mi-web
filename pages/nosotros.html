@@ -4,43 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Sobre nosotros</title>
 </head>
 <body>
-    <header class="navegacion">
-        <a href="../index.html">INICIO</a>
-        <a href="redes.html">REDES</a>
-        <a href="contacto.html">CONTACTO</a>
-        <a class="marcado">NOSOTROS</a>
-        <a href="galeria.html">GALERIA</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mi sitio Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuHamburguesa">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link active disabled" href="#">Nosotros</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <h1>QUIENES SOMOS:</h1>
-        <ul>
-            <li>
-                <img src="../assets/persona.png" alt="imagen del desarrollador 1" class="desarrolladores">
-                <h2>Desarrollador 1</h2> 
-                <p>orem ipsum dolor sit amet consectetur adipiscing elit placerat egestas porta sapien dui congue nibh taciti,</p>
-            </li>
-            <li>
-                <img src="../assets/persona.png" alt="imagen del desarrollador 2" class="desarrolladores">
-                <h2>Desarrollador 2</h2> 
-                <p>Venenatis justo habitasse pharetra molestie curae iaculis habitant tellus torquent leo varius aliquam. Iaculis.</p>
-            </li>
-            <li>
-                <img src="../assets/persona.png" alt="imagen del desarrollador 3" class="desarrolladores">
-                <h2>Desarrollador 3</h2> 
-                <p>aoreet posuere pulvinar varius sociis commodo, faucibus nascetur pretium rutrum. Primis cursus hac laoreet.</p>
-            </li>
-            <li>
-                <img src="../assets/persona.png" alt="imagen del desarrollador 4" class="desarrolladores">
-                <h2>Desarrollador 4</h2>
-                <p>ornare fringilla quam purus, taciti ac libero semper velit   ante netus quisque, auctor class imperdiet penatibus.</p>
-            </li>
-        </ul>
+        <h1 class="text-center mt-3 text-decoration-underline">QUIENES SOMOS:</h1>
+        <p class="mx-3">En esta seccion se mostrara a los desarrolladores de la pagina</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 text-center">
+                    <img src="../assets/persona.png" alt="imagen del desarrollador 1" class="desarrolladores animacion-pantallas-grandes">
+                    <h2>Desarrollador 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat egestas porta sapien dui congue nibh taciti,</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Instagram</a></li>
+                        <li class="list-group-item"><a href="#">LinkedIn</a></li>
+                        <li class="list-group-item"><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 text-center">
+                    <img src="../assets/persona.png" alt="imagen del desarrollador 2" class="desarrolladores animacion-pantallas-grandes">
+                    <h2>Desarrollador 2</h2>
+                    <p>Venenatis justo habitasse pharetra molestie curae iaculis habitant tellus torquent leo varius aliquam. Iaculis.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Instagram</a></li>
+                        <li class="list-group-item"><a href="#">LinkedIn</a></li>
+                        <li class="list-group-item"><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 text-center">
+                    <img src="../assets/persona.png" alt="imagen del desarrollador 3" class="desarrolladores animacion-pantallas-grandes">
+                    <h2>Desarrollador 3</h2>
+                    <p>aoreet posuere pulvinar varius sociis commodo, faucibus nascetur pretium rutrum. Primis cursus hac laoreet.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Instagram</a></li>
+                        <li class="list-group-item"><a href="#">LinkedIn</a></li>
+                        <li class="list-group-item"><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 text-center">
+                    <img src="../assets/persona.png" alt="imagen del desarrollador 4" class="desarrolladores animacion-pantallas-grandes">
+                    <h2>Desarrollador 4</h2>
+                    <p>ornare fringilla quam purus, taciti ac libero semper velit ante netus quisque, auctor class imperdiet penatibus.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Instagram</a></li>
+                        <li class="list-group-item"><a href="#">LinkedIn</a></li>
+                        <li class="list-group-item"><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer class="mt-5">
         <p>© 1850- 2025 Marca/Empresa</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

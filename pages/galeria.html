@@ -4,25 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Nuestro trabajo</title>
 </head>
 <body>
-    <header class="navegacion">
-        <a href="../index.html">INICIO</a>
-        <a href="redes.html">REDES</a>
-        <a href="contacto.html">CONTACTO</a>
-        <a href="nosotros.html">NOSOTROS</a>
-        <a class="marcado">GALERIA</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mi sitio Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuHamburguesa">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="redes.html">Redes</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link active disabled" href="#">Galería</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <h1>NUESTRO TRABAJO:</h1>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit placerat egestas porta sapien dui congue nibh taciti, venenatis justo habitasse pharetra molestie curae iaculis habitant tellus torquent leo varius aliquam. Iaculis laoreet posuere pulvinar varius sociis commodo, faucibus nascetur pretium rutrum. Primis cursus hac laoreet ornare fringilla quam purus, taciti ac libero semper velit ante netus quisque, auctor class imperdiet penatibus habitasse iaculis. Montes dui iaculis potenti volutpat</p>
-        <iframe width="250" height="150" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        <p>Ultricies mauris proin in ultrices himenaeos maecenas semper, nullam sem viverra odio hac malesuada dapibus, parturient class integer urna enim nostra. Consequat convallis sociosqu ornare mollis ultricies phasellus donec     inceptos, est volutpat condimentum urna cum sed purus, hendrerit fermentum sapien quisque quis pharetra varius.</p>
+        <h1 class="text-center mt-3 mb-4 text-decoration-underline">NUESTROS TRABAJOS:</h1>
+        <p class="mx-3">Aquí puedes ver algunos de nuestros trabajos más destacados y sus descripciones.</p>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/trabajo1.jpg" class="d-block achicar-img-galeria" alt="primera imagen de nuestro trabajo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/trabajo2.jpg" class="d-block achicar-img-galeria" alt="segunda imagen de nuestro trabajo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/trabajo3.jpg" class="d-block achicar-img-galeria" alt="tercera imagen de nuestro trabajo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc metus metus, consectetur et erat interdum, euismod venenatis justo. Vestibulum ornare viverra posuere. Sed vehicula cursus lectus, pellentesque rutrum turpis facilisis eget. Vestibulum in risus at lorem semper rutrum. In vel leo in ex congue semper ornare vitae nulla. Curabitur tincidunt non nulla id lacinia. Cras posuere id libero vel porttitor.</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+                    <p class="text-center">Fusce ornare ipsum eu dolor viverra vulputate. Integer vel orci a turpis mollis tincidunt. Vestibulum ac augue tellus. Donec tempus vehicula bibendum. Quisque aliquam efficitur velit, et accumsan enim eleifend sit amet.</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+                    <p class="text-center">Aliquam euismod vel risus id volutpat. Duis viverra, dolor sit amet porttitor dictum, tortor nunc porta eros, in cursus turpis urna et est. Proin eu vehicula lorem. In lobortis scelerisque pharetra.</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer class="mt-5">
         <p>© 1850- 2025 Marca/Empresa</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

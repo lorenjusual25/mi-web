@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Pagina web</title>
 </head>
 <body>
-    <header class="navegacion">
-        <input type="checkbox" id="menu-mostrar" />
-        <label for="menu-mostrar" class="menu-hamburguesa">&#9776;</label>
-        <div class="menu">
-            <a class="marcado opciones">INICIO</a>
-            <a href="pages/redes.html" class="opciones">REDES</a>
-            <a href="pages/contacto.html" class="opciones">CONTACTO</a>
-            <a href="pages/nosotros.html" class="opciones">NOSOTROS</a>
-            <a href="pages/galeria.html" class="opciones">GALERIA</a>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mi sitio Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuHamburguesa">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3"><a class="nav-link active disabled" href="#">Inicio</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="pages/redes.html">Redes</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="pages/galeria.html">Galería</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main id="mainInicio">
-        <h1 id="h1Inicio">NUESTRA PAGINA WEB</h1>
-        <img src="assets/descargar.jpg" alt="imgInicio" id="imgInicio">
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum luctus, parturient sociis natoque fringilla habitasse vitae mattis interdum curae senectus, magnis lobortis condimentum ullamcorper metus netus volutpat massa. Nunc ante proin eu suspendisse sagittis nostra placerat mattis scelerisque orci mollis parturient, sem varius posuere inceptos himenaeos maecenas convallis etiam montes sociis.</p>
+    <main class="container mt-3">
+        <h1 class="text-center mt-3 text-decoration-underline">Nuestra página inicial</h1>
+        <div class="card text-bg-dark">
+            <img src="assets/descargar.jpg" class="card-img achicar-img-index animacion-pantallas-grandes" alt="imagen de presentacion">
+            <div class="card-img-overlay align-items-center">
+                <h5 class="card-title text-black tamano-texto">Bienvenido a nuestra página</h5>
+                <p class="card-text text-black tamano-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc metus metus, consectetur et erat interdum, euismod venenatis justo. Vestibulum ornare viverra posuere. Sed vehicula cursus lectus, pellentesque rutrum turpis facilisis eget. Vestibulum in risus at lorem semper rutrum. In vel leo in ex congue semper ornare vitae nulla. Curabitur tincidunt non nulla id lacinia</p>
+             </div>
+        </div>
     </main>
-    <footer>
-        <p>© 1850 - 2025 Marca/Empresa</p>
+    <footer class="mt-5">
+        <p>© 1850- 2025 Marca/Empresa</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
